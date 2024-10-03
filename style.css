@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+
+.ribbon {
+  width: 100vw; 
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.ribbon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mom1 img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.slide-container {
+  width: 670px;
+  padding: 0;
+  margin: 0; /* Remove qualquer margem superior */
+}
+
+.slide-content{ 
+  margin: 0;  
+}
+
+.card {
+  border-radius: 10px;
+  background-color: pink;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  transition: transform 0.2s; /* Efeito de transição suave */
+  min-width: 240px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Padding aumentado para melhor espaçamento */
+  text-align: center; /* Centraliza o texto */
+}
+
+.card-content p {
+  line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+  text-align: left;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: pink;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: darksalmon;
+}
+
+/* Responsividade */
+@media screen and (max-width: 758px) {
+  .card {
+    width: 60%;
+  }
+
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .ribbon {
+    margin-bottom: 10px; 
+  }
+
+  .slide-container {
+    padding: 20px 20px; 
+  }
+}
+
+/* Aumenta ainda mais para telas pequenas */
+@media screen and (max-width: 500px) {
+  .card {
+    width: 50%
+  }
+}
+
+.love img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 35px 0 30px 0;
+}
+
+.mom2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
